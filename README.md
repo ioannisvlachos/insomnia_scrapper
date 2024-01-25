@@ -37,12 +37,13 @@ Scrapped data can be used for differente purposes, such as data handling, databa
 * Requests library
 * BeautifulSoup library
 * tqdm
+* art (just4fun)
 
 ### Installation
 
 Install the required libraries using pip:
    ```bash
-   pip install requests beautifulsoup4
+   pip install requests beautifulsoup4 tqdm art
    ```
 
 
@@ -64,6 +65,7 @@ python insomnia_scraper.py --download-all
 ```
 Usage
 The script handles thread retrieval and version control automatically. It generates a version control json file that records the last processed thread's URL and timestamp. Subsequent scraping runs will resume.
+Attention: First database downnload takes days!
 
 
 * To download insomnia.gr's members:
