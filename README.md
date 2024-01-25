@@ -52,8 +52,9 @@ Install the required libraries using pip:
 1. Place the insomnia_scraper.py file in your desired working directory.
 2. Open a terminal and navigate to the working directory.
 3. Execute the following command, providing any desired scraping options:
+
 ```bash
-   python insomnia_scraper.py --options
+python insomnia_scraper.py --options
 ```
 
 ## Example Usage:
