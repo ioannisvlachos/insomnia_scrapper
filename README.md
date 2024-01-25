@@ -1,5 +1,5 @@
 # Insomnia.gr Scraper
-Python BS4 scrapper for gih-tech forum insomnia.gr
+Python BS4 scrapper for high-tech forum insomnia.gr
 
 ## Overview
 
@@ -35,6 +35,7 @@ This script scrapes user and comment data from the high-tech forum insomnia.gr. 
 * Python 3.x
 * Requests library
 * BeautifulSoup library
+* tqdm
 
 ### Installation
 
@@ -53,9 +54,9 @@ Install the required libraries using pip:
    python insomnia_scraper.py --options
 ```
 
-Example Usage:
+## Example Usage:
 
-To scrape all threads from insomnia.gr and save the data to a JSON file named data.json under the ~/output/ directory:
+* To scrape all threads from insomnia.gr and save the data to a JSON file named data.json under the ~/output/ directory:
 
 ```bash
 python insomnia_scraper.py --download-all
@@ -63,15 +64,19 @@ python insomnia_scraper.py --download-all
 Usage
 The script handles thread retrieval and version control automatically. It generates a version control json file that records the last processed thread's URL and timestamp. Subsequent scraping runs will resume.
 
+
+* To download insomnia.gr's members:
 ```bash
-python insomnia_scrapper.py -c 589656 -w output
-```
-Usage
-The script handles checks if thread_id 589656 is in the database
-```
-bash
 python insomnia_scrapper.py -m
 ```
 Usage
 The script opens a webbrowser session for the user to get the latest member. After inserting the latest member, the sripts downloads all new member since the last users_db update. 
+
+
+* To check if thread_id 589656 is in the database:
+```bash
+python insomnia_scrapper.py -c 589656 -w output
+
+```
+
 
