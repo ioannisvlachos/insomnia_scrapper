@@ -4,6 +4,7 @@ Python BS4 scrapper for high-tech forum insomnia.gr
 ## Overview
 
 This script scrapes user and comment data from the high-tech forum insomnia.gr. It leverages BeautifulSoup and Requests to efficiently extract and process the forum's content.
+Scrapped data can be used for differente purposes, such as data handling, database testing, osint, etc.
 
 ## Key Features
 
