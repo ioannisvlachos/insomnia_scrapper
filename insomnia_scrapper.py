@@ -386,6 +386,7 @@ def dump_ver_control(ver_control):
 
 def main():
 	start_time = datetime.now().isoformat(timespec='milliseconds')
+	save_folder = 'output'
 	parser = argparse.ArgumentParser(description='BS4 script to scrape threads from insomnia.gr forum, for no reason! Have fun!', epilog="Thanks for using insomniascrapper!")
 	parser.add_argument('-d', '--download-all', help='Downloads all insomnia.gr forum', action='store_true')  # can 'store_false' for no-xxx flags
 	parser.add_argument('-u', '--update', help='Update database', action="store_true")
@@ -416,7 +417,7 @@ def main():
 		print(f'Number of threads in pool: {len(pool)}')
 
 		# downloading pool
-		download_pool(pool, ver_control)
+		download_pool(pool, ver_control, start_time, save_folder)
 
 		# saving ver_control for future need
 		dump_ver_control(ver_control)
